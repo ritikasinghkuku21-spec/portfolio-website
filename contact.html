@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Ritika Singh</title>
+  <meta name="description" content="Get in touch with Ritika Singh about internship opportunities, collaborations, or front-end development work.">
+  <meta name="author" content="Ritika Singh">
+  <link rel="canonical" href="https://example.com/contact.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — Ritika Singh">
+  <meta property="og:description" content="Get in touch about internships, collaborations, or front-end development work.">
+  <meta property="og:url" content="https://example.com/contact.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact — Ritika Singh">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html">Ritika<span class="dot">.</span></a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav-list">
+        Menu
+      </button>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul id="primary-nav-list">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="#" download aria-label="Download Ritika Singh's resume PDF">
+          <span aria-hidden="true">↓</span> Resume
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero wrap" aria-labelledby="contact-heading" style="padding-block: clamp(2.5rem, 6vw, 4rem);">
+      <span class="hero-eyebrow">
+        <svg class="sparkle" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2z"/></svg>
+        Get in touch
+      </span>
+      <h1 id="contact-heading">Contact</h1>
+      <p class="lede">I'm always open to internship opportunities and collaborations.
+      Send a message below, or reach out directly using the details alongside it.</p>
+    </section>
+
+    <section class="wrap" aria-labelledby="contact-form-heading">
+      <div class="contact-grid">
+
+        <aside class="panel contact-info" aria-labelledby="other-ways-heading">
+          <h2 id="other-ways-heading">Reach me directly</h2>
+          <dl>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:ritikasingh.ritu21@gmail.com">ritikasingh.ritu21@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Bhubaneswar, Odisha, India</dd>
+            </div>
+            <div>
+              <dt>Response time</dt>
+              <dd>Within 2 business days</dd>
+            </div>
+            <div>
+              <dt>Elsewhere</dt>
+              <dd>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;·&nbsp;
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </dd>
+            </div>
+          </dl>
+        </aside>
+
+        <div class="panel">
+          <h2 id="contact-form-heading" class="visually-hidden">Contact form</h2>
+
+          <form id="contact-form" novalidate>
+            <fieldset>
+              <legend>Send me a message</legend>
+
+              <div class="field">
+                <label for="name">
+                  Full name <span class="required" aria-hidden="true">*</span>
+                  <span class="visually-hidden">(required)</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                  data-hint-id=""
+                  aria-describedby="name-error">
+                <span id="name-error" class="hint" role="alert"></span>
+              </div>
+
+              <div class="field">
+                <label for="email">
+                  Email address <span class="required" aria-hidden="true">*</span>
+                  <span class="visually-hidden">(required)</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  aria-describedby="email-hint email-error"
+                  data-hint-id="email-hint">
+                <span id="email-hint" class="hint">I'll only use this to reply to your message.</span>
+                <span id="email-error" class="hint" role="alert"></span>
+              </div>
+
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  autocomplete="off"
+                  data-hint-id="">
+              </div>
+
+              <div class="field">
+                <label for="message">
+                  Message <span class="required" aria-hidden="true">*</span>
+                  <span class="visually-hidden">(required)</span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  aria-describedby="message-error"
+                  data-hint-id=""></textarea>
+                <span id="message-error" class="hint" role="alert"></span>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p id="form-status" class="status-region" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p style="margin:0;">&copy; 2026 Ritika Singh. Built with semantic HTML5.</p>
+      <nav aria-label="Footer">
+        <a href="index.html#home">Home</a> &nbsp;·&nbsp;
+        <a href="projects.html">Projects</a> &nbsp;·&nbsp;
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
